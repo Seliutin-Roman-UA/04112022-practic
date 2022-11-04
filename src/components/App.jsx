@@ -18,15 +18,14 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      {!user ? (
-        <Form />
-      ) : (
-        <Button
-          title={'LogOut ' + user.name}
-          type="button"
-          onClick={logOutUser}
-        />
-      )}
+      {/* {!user ? ( */}
+      <Form />
+
+      <Button
+        title={'LogOut ' + user?.name}
+        type="button"
+        onClick={logOutUser}
+      />
     </div>
   );
 };

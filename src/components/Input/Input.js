@@ -1,11 +1,8 @@
-
-
-export function Input({ label,  onChange }) {
-   
-    return (
-      <label>
-        {label}
-        <input onChange={onChange} />
-      </label>
-    );
+export function Input({ label, onChange, value }) {
+  return (
+    <label>
+      {label}
+      <input name={label} value={value} onChange={onChange} />
+    </label>
+  );
 }
